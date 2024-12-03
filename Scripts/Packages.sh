@@ -51,9 +51,9 @@ UPDATE_PACKAGE "luci-app-quickstart" "kenzok8/small-package" "main" "pkg"
 UPDATE_PACKAGE "luci-app-adguardhome" "kenzok8/small-package" "main" "pkg"
 UPDATE_PACKAGE "luci-app-socat" "kenzok8/small-package" "main" "pkg"
 UPDATE_PACKAGE "luci-app-store" "kenzok8/small-package" "main" "pkg"
-UPDATE_PACKAGE "lluci-lib-taskd" "kenzok8/small-package" "main" "pkg"
-UPDATE_PACKAGE "luci-lib-xterm" "kenzok8/small-package" "main" "pkg"
-UPDATE_PACKAGE "taskd" "kenzok8/small-package" "main" "pkg"
+#UPDATE_PACKAGE "lluci-lib-taskd" "kenzok8/small-package" "main" "pkg"
+#UPDATE_PACKAGE "luci-lib-xterm" "kenzok8/small-package" "main" "pkg"
+#UPDATE_PACKAGE "taskd" "kenzok8/small-package" "main" "pkg"
 UPDATE_PACKAGE "quickstart" "kenzok8/small-package" "main" "pkg"
 
 
