@@ -33,7 +33,7 @@ sed -i "s/hostname='.*'/hostname='$WRT_NAME'/g" $CFG_FILE
 #修改UPnP 菜单名
 sed -i "s/UPnP IGD & PCP\/NAT-PMP/UPnP/g" feeds/luci/applications/luci-app-upnp/root/usr/share/luci/menu.d/luci-app-upnp.json
 #修复passwall2 apk 版本号
-sed -i 's/PKG_VERSION:=\([0-9\.]*\)-[0-9]*/PKG_VERSION:=\1/; s/PKG_RELEASE:=.*/PKG_RELEASE:=1/' ./package/small/luci-app-passwall2/Makefile
+#sed -i 's/PKG_VERSION:=\([0-9\.]*\)-[0-9]*/PKG_VERSION:=\1/; s/PKG_RELEASE:=.*/PKG_RELEASE:=1/' ./package/small/luci-app-passwall2/Makefile
 
 
 #配置文件修改
