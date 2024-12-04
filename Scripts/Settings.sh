@@ -37,6 +37,8 @@ sed -i "s/UPnP IGD & PCP\/NAT-PMP/UPnP/g" feeds/luci/applications/luci-app-upnp/
 #修复passwall2 apk 版本号
 #sed -i 's/PKG_VERSION:=\([0-9\.]*\)-[0-9]*/PKG_VERSION:=\1/; s/PKG_RELEASE:=.*/PKG_RELEASE:=1/' ./package/small/luci-app-passwall2/Makefile
 
+#不编译coremark
+rm -rf ./build_dir/target-aarch64_cortex-a53_musl/coremark*
 
 #配置文件修改
 echo "CONFIG_PACKAGE_luci=y" >> ./.config
