@@ -107,6 +107,6 @@ UPDATE_VERSION "tailscale"
 #删除官方的默认插件
 rm -rf feeds/luci/applications/luci-app-{passwall,mosdns,dockerman,dae*,bypass*}
 rm -rf feeds/packages/net/{shadowsocks-rust,shadowsocksr-libev,xray*,v2ray*,dae*,sing-box}
-git clone https://github.com/davidtall/small small
+#git clone https://github.com/davidtall/small small
 
-git clone https://github.com/zzsj0928/luci-app-pushbot luci-app-pushbot
+#git clone https://github.com/zzsj0928/luci-app-pushbot luci-app-pushbot
