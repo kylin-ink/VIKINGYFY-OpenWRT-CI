@@ -6,6 +6,8 @@ sed -i "s/luci-theme-bootstrap/luci-theme-$WRT_THEME/g" $(find ./feeds/luci/coll
 sed -i "s/192\.168\.[0-9]*\.[0-9]*/$WRT_IP/g" $(find ./feeds/luci/modules/luci-mod-system/ -type f -name "flash.js")
 #添加编译日期标识
 sed -i "s/(\(luciversion || ''\))/(\1) + (' \/ $WRT_CI-$WRT_DATE')/g" $(find ./feeds/luci/modules/luci-mod-status/ -type f -name "10_system.js")
+#kenzok8 small-package仓
+sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 
 WIFI_SH="./package/base-files/files/etc/uci-defaults/990_set-wireless.sh"
 WIFI_UC="./package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc"
@@ -34,8 +36,7 @@ sed -i "s/hostname='.*'/hostname='$WRT_NAME'/g" $CFG_FILE
 sed -i "s/UPnP IGD & PCP\/NAT-PMP/UPnP/g" feeds/luci/applications/luci-app-upnp/root/usr/share/luci/menu.d/luci-app-upnp.json
 #修复passwall2 apk 版本号
 #sed -i 's/PKG_VERSION:=\([0-9\.]*\)-[0-9]*/PKG_VERSION:=\1/; s/PKG_RELEASE:=.*/PKG_RELEASE:=1/' ./package/small/luci-app-passwall2/Makefile
-#kenzok8 small-package仓
-sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
+
 
 #配置文件修改
 echo "CONFIG_PACKAGE_luci=y" >> ./.config
