@@ -25,11 +25,11 @@ UPDATE_PACKAGE "argon" "jerrykuku/luci-theme-argon" "master"
 UPDATE_PACKAGE "kucat" "sirpdboy/luci-theme-kucat" "js"
 
 UPDATE_PACKAGE "homeproxy" "VIKINGYFY/homeproxy" "main"
-UPDATE_PACKAGE "mihomo" "morytyann/OpenWrt-mihomo" "main"
-UPDATE_PACKAGE "nekoclash" "Thaolga/luci-app-nekoclash" "main"
+#UPDATE_PACKAGE "mihomo" "morytyann/OpenWrt-mihomo" "main"
+#UPDATE_PACKAGE "nekoclash" "Thaolga/luci-app-nekoclash" "main"
 UPDATE_PACKAGE "openclash" "vernesong/OpenClash" "dev" "pkg"
 UPDATE_PACKAGE "passwall" "xiaorouji/openwrt-passwall" "main" "pkg"
-UPDATE_PACKAGE "ssr-plus" "fw876/helloworld" "master"
+#UPDATE_PACKAGE "ssr-plus" "fw876/helloworld" "master"
 
 UPDATE_PACKAGE "alist" "sbwml/luci-app-alist" "main"
 UPDATE_PACKAGE "mosdns" "sbwml/luci-app-mosdns" "v5"
@@ -38,7 +38,7 @@ UPDATE_PACKAGE "easytier" "lazyoop/networking-artifact" "main" "pkg"
 
 UPDATE_PACKAGE "luci-app-advancedplus" "VIKINGYFY/packages" "main" "pkg"
 UPDATE_PACKAGE "luci-app-gecoosac" "lwb1978/openwrt-gecoosac" "main"
-UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
+#UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
 UPDATE_PACKAGE "luci-app-wolplus" "VIKINGYFY/packages" "main" "pkg"
 
 #UPDATE_PACKAGE "lucky" "gdy666/luci-app-lucky" "main" "pkg"
@@ -49,7 +49,7 @@ UPDATE_PACKAGE "luci-app-lucky" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "luci-app-quickstart" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "luci-app-easymesh" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "luci-app-adguardhome" "kenzok8/small-package" "main" "pkg"
-UPDATE_PACKAGE "luci-app-socat" "kenzok8/small-package" "main" "pkg"
+#UPDATE_PACKAGE "luci-app-socat" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "luci-app-store" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "lluci-lib-taskd" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "luci-lib-xterm" "kenzok8/small-package" "main" "pkg"
@@ -107,6 +107,6 @@ UPDATE_VERSION "tailscale"
 #删除官方的默认插件
 rm -rf feeds/luci/applications/luci-app-{passwall,mosdns,dockerman,dae*,bypass*}
 rm -rf feeds/packages/net/{shadowsocks-rust,shadowsocksr-libev,xray*,v2ray*,dae*,sing-box}
-#git clone https://github.com/davidtall/small small
+git clone https://github.com/davidtall/small small
 
-#git clone https://github.com/zzsj0928/luci-app-pushbot luci-app-pushbot
+git clone https://github.com/zzsj0928/luci-app-pushbot luci-app-pushbot
