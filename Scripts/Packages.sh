@@ -46,7 +46,7 @@ UPDATE_PACKAGE "luci-app-wolplus" "VIKINGYFY/packages" "main" "pkg"
 #UPDATE_PACKAGE "luci-app-turboacc" "chenmozhijin/turboacc" "main" "pkg"
 UPDATE_PACKAGE "lucky" "kenzok8/small-package" "main" "pkg"
 UPDATE_PACKAGE "luci-app-lucky" "kenzok8/small-package" "main" "pkg"
-UPDATE_PACKAGE "luci-app-quickstart" "kenzok8/small-package" "main" "pkg"
+#UPDATE_PACKAGE "luci-app-quickstart" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "luci-app-easymesh" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "luci-app-adguardhome" "kenzok8/small-package" "main" "pkg"
 UPDATE_PACKAGE "luci-app-socat" "kenzok8/small-package" "main" "pkg"
@@ -54,7 +54,7 @@ UPDATE_PACKAGE "luci-app-socat" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "lluci-lib-taskd" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "luci-lib-xterm" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "taskd" "kenzok8/small-package" "main" "pkg"
-UPDATE_PACKAGE "quickstart" "kenzok8/small-package" "main" "pkg"
+#UPDATE_PACKAGE "quickstart" "kenzok8/small-package" "main" "pkg"
 
 
 if [[ $WRT_REPO != *"immortalwrt"* ]]; then
