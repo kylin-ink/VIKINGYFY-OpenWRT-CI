@@ -49,11 +49,11 @@ UPDATE_PACKAGE "luci-app-lucky" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "luci-app-quickstart" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "luci-app-easymesh" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "luci-app-adguardhome" "kenzok8/small-package" "main" "pkg"
-#UPDATE_PACKAGE "luci-app-socat" "kenzok8/small-package" "main" "pkg"
-#UPDATE_PACKAGE "luci-app-store" "kenzok8/small-package" "main" "pkg"
-#UPDATE_PACKAGE "lluci-lib-taskd" "kenzok8/small-package" "main" "pkg"
-#UPDATE_PACKAGE "luci-lib-xterm" "kenzok8/small-package" "main" "pkg"
-#UPDATE_PACKAGE "taskd" "kenzok8/small-package" "main" "pkg"
+UPDATE_PACKAGE "luci-app-socat" "kenzok8/small-package" "main" "pkg"
+UPDATE_PACKAGE "luci-lib-xterm" "kenzok8/small-package" "main" "pkg"
+UPDATE_PACKAGE "taskd" "kenzok8/small-package" "main" "pkg"
+UPDATE_PACKAGE "luci-lib-taskd" "kenzok8/small-package" "main" "pkg"
+UPDATE_PACKAGE "luci-app-store" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "quickstart" "kenzok8/small-package" "main" "pkg"
 
 
@@ -107,6 +107,7 @@ UPDATE_VERSION "tailscale"
 #删除官方的默认插件
 rm -rf feeds/luci/applications/luci-app-{passwall,mosdns,dockerman,dae*,bypass*}
 rm -rf feeds/packages/net/{shadowsocks-rust,shadowsocksr-libev,xray*,v2ray*,dae*,sing-box}
+rm -rf feeds/luci/applications/luci-lib-{xterm,taskd}
 git clone https://github.com/davidtall/small small
 
 git clone https://github.com/zzsj0928/luci-app-pushbot luci-app-pushbot
