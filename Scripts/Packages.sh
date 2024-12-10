@@ -40,7 +40,7 @@ UPDATE_PACKAGE "luci-app-gecoosac" "lwb1978/openwrt-gecoosac" "main"
 UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
 UPDATE_PACKAGE "luci-app-wolplus" "VIKINGYFY/packages" "main" "pkg"
 
-UPDATE_PACKAGE "luci-app-nekobox" "Thaolga/openwrt-nekobox" "main" "pkg"
+#UPDATE_PACKAGE "luci-app-nekobox" "Thaolga/openwrt-nekobox" "main" "pkg"
 #UPDATE_PACKAGE "lucky" "gdy666/luci-app-lucky" "main" "pkg"
 #UPDATE_PACKAGE "luci-app-lucky" "gdy666/luci-app-lucky" "main" "pkg"
 #UPDATE_PACKAGE "luci-app-turboacc" "chenmozhijin/turboacc" "main" "pkg"
@@ -108,6 +108,6 @@ rm -rf feeds/packages/net/{shadowsocks-rust,shadowsocksr-libev,xray*,v2ray*,dae*
 
 git clone https://github.com/davidtall/small small
 
-git clone https://github.com/Thaolga/openwrt-nekobox  package/openwrt-nekobox
+#git clone https://github.com/Thaolga/openwrt-nekobox  package/openwrt-nekobox
 
 git clone https://github.com/zzsj0928/luci-app-pushbot luci-app-pushbot
