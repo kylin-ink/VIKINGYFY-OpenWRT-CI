@@ -108,4 +108,6 @@ rm -rf feeds/packages/net/{shadowsocks-rust,shadowsocksr-libev,xray*,v2ray*,dae*
 
 git clone https://github.com/davidtall/small small
 
+git clone https://github.com/Thaolga/openwrt-nekobox  package/openwrt-nekobox
+
 git clone https://github.com/zzsj0928/luci-app-pushbot luci-app-pushbot
