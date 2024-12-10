@@ -40,6 +40,7 @@ UPDATE_PACKAGE "luci-app-gecoosac" "lwb1978/openwrt-gecoosac" "main"
 UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
 UPDATE_PACKAGE "luci-app-wolplus" "VIKINGYFY/packages" "main" "pkg"
 
+UPDATE_PACKAGE "luci-app-nekobox" "Thaolga/openwrt-nekobox" "main" "pkg"
 #UPDATE_PACKAGE "lucky" "gdy666/luci-app-lucky" "main" "pkg"
 #UPDATE_PACKAGE "luci-app-lucky" "gdy666/luci-app-lucky" "main" "pkg"
 #UPDATE_PACKAGE "luci-app-turboacc" "chenmozhijin/turboacc" "main" "pkg"
