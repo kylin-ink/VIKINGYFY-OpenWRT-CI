@@ -52,6 +52,8 @@ UPDATE_PACKAGE "luci-app-socat" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "taskd" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "luci-lib-taskd" "kenzok8/small-package" "main" "pkg"
 #UPDATE_PACKAGE "luci-app-store" "kenzok8/small-package" "main" "pkg"
+UPDATE_PACKAGE "luci-app-partexp" "kenzok8/small-package" "main" "pkg"
+#UPDATE_PACKAGE "luci-app-gecoosac" "kenzok8/small-package" "main" "pkg"
 
 if [[ $WRT_REPO != *"immortalwrt"* ]]; then
 	UPDATE_PACKAGE "qmi-wwan" "immortalwrt/wwan-packages" "master" "pkg"
