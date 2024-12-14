@@ -40,6 +40,19 @@ UPDATE_PACKAGE "luci-app-gecoosac" "lwb1978/openwrt-gecoosac" "main"
 UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
 UPDATE_PACKAGE "luci-app-wolplus" "VIKINGYFY/packages" "main" "pkg"
 
+#UPDATE_PACKAGE "lucky" "gdy666/luci-app-lucky" "main" "pkg"
+#UPDATE_PACKAGE "luci-app-lucky" "gdy666/luci-app-lucky" "main" "pkg"
+#UPDATE_PACKAGE "luci-app-turboacc" "chenmozhijin/turboacc" "main" "pkg"
+UPDATE_PACKAGE "lucky" "kenzok8/small-package" "main" "pkg"
+UPDATE_PACKAGE "luci-app-lucky" "kenzok8/small-package" "main" "pkg"
+#UPDATE_PACKAGE "luci-app-easymesh" "kenzok8/small-package" "main" "pkg"
+UPDATE_PACKAGE "luci-app-adguardhome" "kenzok8/small-package" "main" "pkg"
+UPDATE_PACKAGE "luci-app-socat" "kenzok8/small-package" "main" "pkg"
+#UPDATE_PACKAGE "luci-lib-xterm" "kenzok8/small-package" "main" "pkg"
+#UPDATE_PACKAGE "taskd" "kenzok8/small-package" "main" "pkg"
+#UPDATE_PACKAGE "luci-lib-taskd" "kenzok8/small-package" "main" "pkg"
+#UPDATE_PACKAGE "luci-app-store" "kenzok8/small-package" "main" "pkg"
+
 if [[ $WRT_REPO != *"immortalwrt"* ]]; then
 	UPDATE_PACKAGE "qmi-wwan" "immortalwrt/wwan-packages" "master" "pkg"
 fi
@@ -81,3 +94,15 @@ UPDATE_VERSION() {
 #UPDATE_VERSION "软件包名" "测试版，true，可选，默认为否"
 UPDATE_VERSION "sing-box"
 UPDATE_VERSION "tailscale"
+
+rm -rf small && git clone https://github.com/davidtall/small small
+#版本号修复
+sed -i 's/-\(\$(PKG_RELEASE)\)/.\1/g' small/v2ray-geodata/Makefile
+rm -rf luci-app-pushbot && git clone https://github.com/zzsj0928/luci-app-pushbot luci-app-pushbot
+
+#删除官方的默认插件
+rm -rf ../feeds/luci/applications/luci-app-{passwall*,mosdns,dockerman,dae*,bypass*}
+rm -rf ../feeds/packages/net/{shadowsocks-rust,shadowsocksr-libev,xray*,v2ray*,dae*,sing-box}
+#coremark修复
+sed -i 's/mkdir \$(PKG_BUILD_DIR)\/\$(ARCH)/mkdir -p \$(PKG_BUILD_DIR)\/\$(ARCH)/g' ../feeds/packages/utils/coremark/Makefile
+
